@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Worlds | One Katha at a Time</title>
+    <meta name="description" content="Explore Roots and Wings — our storytelling worlds designed to ground children in heritage and set them free with imagination.">
+    <link rel="stylesheet" href="premium_style.css">
+    <style>
+        .worlds-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        .world-card {
+            padding: 60px;
+            text-align: center;
+        }
+        .world-roots {
+            background: linear-gradient(135deg, rgba(217, 119, 6, 0.1), rgba(30, 41, 59, 0.5));
+            border-color: rgba(217, 119, 6, 0.3);
+        }
+        .world-wings {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(30, 41, 59, 0.5));
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+        .source-pill {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 100px;
+            font-size: 0.85rem;
+            margin: 0.4rem;
+            color: var(--text-muted);
+        }
+        .gain-tag {
+            font-weight: 700;
+            color: var(--brand-primary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.75rem;
+            display: block;
+            margin-top: 2rem;
+        }
+        @media (max-width: 900px) {
+            .worlds-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-mesh"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">ONE KATHA</a>
+        <div class="nav-links">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Courses & Pricing.html">Courses</a>
+            <a href="Our Story Worlds (Roots & Wings).html" class="active" style="opacity: 1; color: var(--brand-primary);">Story Worlds</a>
+            <a href="Blog.html">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <button class="btn-primary" onclick="location.href='Courses & Pricing.html'">Begin Journey</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <header class="blog-header">
+            <div class="hero-content">
+                <span class="hero-tag">Core Philosophies</span>
+                <h1>Our Story <br>Worlds</h1>
+                <p>Every child needs two things — <em>roots</em> that ground them, and <em>wings</em> that set them free.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="worlds-container">
+                <!-- ROOTS -->
+                <div class="glass-card world-card world-roots">
+                    <div class="card-icon" style="margin: 0 auto 2rem; background: rgba(217, 119, 6, 0.1); color: #d97706;">🌳</div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem; color: #fbbf24;">Roots</h2>
+                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 2rem; color: #f59e0b; font-weight: 700;">Know where you come from</p>
+                    <p style="margin-bottom: 2.5rem; color: var(--text-main); line-height: 1.8;">From grand epics to quiet village tales — our Roots world draws from the deep well of Indian heritage, keeping your child connected to who they are.</p>
+                    
+                    <div style="margin-bottom: 2.5rem;">
+                        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">We draw from</p>
+                        <div class="source-pill">Ramayana & Mahabharata</div>
+                        <div class="source-pill">Panchatantra</div>
+                        <div class="source-pill">Jataka Tales</div>
+                        <div class="source-pill">Indian Folklore</div>
+                    </div>
+
+                    <span class="gain-tag" style="color: #fbbf24;">Your child gains</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Cultural Pride • Values • Critical Thinking • Awareness</p>
+                </div>
+
+                <!-- WINGS -->
+                <div class="glass-card world-card world-wings">
+                    <div class="card-icon" style="margin: 0 auto 2rem;">🕊️</div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Wings</h2>
+                    <p style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.8rem; margin-bottom: 2rem; color: var(--brand-primary); font-weight: 700;">Explore the world through stories</p>
+                    <p style="margin-bottom: 2.5rem; color: var(--text-main); line-height: 1.8;">From Aesop to Anansi, Norse myths to Japanese folktales — our Wings world opens children to the full breadth of human storytelling.</p>
+                    
+                    <div style="margin-bottom: 2.5rem;">
+                        <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 1rem;">We draw from</p>
+                        <div class="source-pill">World Mythology</div>
+                        <div class="source-pill">Children's Classics</div>
+                        <div class="source-pill">Global Folktales</div>
+                        <div class="source-pill">Modern Narratives</div>
+                    </div>
+
+                    <span class="gain-tag">Your child gains</span>
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Perspective • Grammar • Creative Writing • Public Speaking</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 6rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto; padding-bottom: 100px;">
+                <p style="font-size: 1.4rem; font-family: 'Playfair Display', serif; line-height: 1.8;">
+                    <b>Both worlds develop</b> decision-making, strategy, empathy, self-control, and moral reasoning — with depth, and without preaching.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: 100px 5%; border-top: 1px solid var(--glass-border); text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">ONE KATHA</h2>
+        <div class="nav-links" style="justify-content: center; margin-bottom: 3rem;">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Blog.html">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 One Katha at a Time. Created with passion for the spoken and written word.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

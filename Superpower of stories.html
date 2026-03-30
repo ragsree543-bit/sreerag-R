@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Superpower of Stories | One Katha at a Time</title>
+    <meta name="description" content="Discover the transformative power of storytelling in child development. Stories aren't just entertainment; they are the blueprint for empathy and intelligence.">
+    <link rel="stylesheet" href="premium_style.css">
+    <style>
+        .power-item {
+            margin-bottom: 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .power-item:nth-child(even) {
+            direction: rtl;
+        }
+        .power-item:nth-child(even) > * {
+            direction: ltr;
+        }
+        .power-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--brand-primary);
+        }
+        .power-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-main);
+            margin-bottom: 2rem;
+        }
+        .power-image {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            border: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-lg);
+        }
+        .stats-banner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 6rem 0;
+            padding: 4rem;
+            background: var(--glass-bg);
+            border-radius: 24px;
+            border: 1px solid var(--glass-border);
+            text-align: center;
+        }
+        .stat-val {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--brand-primary);
+            display: block;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+        }
+        @media (max-width: 900px) {
+            .power-item { grid-template-columns: 1fr; gap: 2rem; }
+            .stats-banner { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-mesh"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">ONE KATHA</a>
+        <div class="nav-links">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Courses & Pricing.html">Courses</a>
+            <a href="Superpower of stories.html" class="active" style="opacity: 1; color: var(--brand-primary);">Superpower</a>
+            <a href="Blog.html">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <button class="btn-primary" onclick="location.href='Courses & Pricing.html'">Begin Journey</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <header class="blog-header">
+            <div class="hero-content">
+                <span class="hero-tag">The Science of Narrative</span>
+                <h1>The Superpower <br>of Stories</h1>
+                <p>More than just tales, stories are the neurobiological software that builds a child's world.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="power-item">
+                <div class="power-content">
+                    <h2>Neuro-Linguistic Wiring</h2>
+                    <p>When a child listens to a story, their brain doesn't just process words—it simulates reality. Neural coupling allows the listener to experience the same brain activity as the storyteller, creating deep cognitive pathways.</p>
+                    <div class="glass-card" style="padding: 2rem;">
+                        <p style="font-style: italic; margin-bottom: 0;">"Stories are the only way to activate parts of the brain so that a listener turns the story into their own idea and experience."</p>
+                    </div>
+                </div>
+                <div class="power-image">🧠</div>
+            </div>
+
+            <div class="stats-banner">
+                <div>
+                    <span class="stat-val">22x</span>
+                    <span class="stat-label">More likely to remember facts</span>
+                </div>
+                <div>
+                    <span class="stat-val">85%</span>
+                    <span class="stat-label">Increase in empathy metrics</span>
+                </div>
+                <div>
+                    <span class="stat-val">∞</span>
+                    <span class="stat-label">Imagination potential</span>
+                </div>
+            </div>
+
+            <div class="power-item">
+                <div class="power-content">
+                    <h2>The Empathy Engine</h2>
+                    <p>Stepping into a character's shoes is the ultimate exercise in emotional intelligence. By navigating the challenges of heroes from diverse cultures, children develop a global perspective and situational awareness.</p>
+                    <button class="btn-primary">Explore Our Worlds</button>
+                </div>
+                <div class="power-image">❤️</div>
+            </div>
+
+            <div class="power-item">
+                <div class="power-content">
+                    <h2>Values Without Preaching</h2>
+                    <p>Instruction fades, but stories remain. Values like courage, integrity, and resilience are best absorbed through the narrative arc of a journey rather than a list of rules.</p>
+                </div>
+                <div class="power-image">🛡️</div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="text-align: center; padding: 100px 0;">
+            <div class="glass-card" style="max-width: 800px; margin: 0 auto; padding: 60px;">
+                <h2>Give them the gift of stories</h2>
+                <p style="margin-bottom: 2.5rem;">Join One Katha at a Time and unlock a library of narrative wisdom.</p>
+                <button class="btn-primary" style="padding: 1.2rem 3rem;">Enroll Your Child</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: 100px 5%; border-top: 1px solid var(--glass-border); text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">ONE KATHA</h2>
+        <div class="nav-links" style="justify-content: center; margin-bottom: 3rem;">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Blog.html">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 One Katha at a Time. Narrating the future.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

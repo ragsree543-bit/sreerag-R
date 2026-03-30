@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | One Katha at a Time</title>
+    <meta name="description" content="Insights, reflections, and resources for the modern storyteller and conscious parent.">
+    <link rel="stylesheet" href="premium_style.css">
+</head>
+<body>
+
+    <!-- Background Effects -->
+    <div class="bg-mesh"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">ONE KATHA</a>
+        <div class="nav-links">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Courses & Pricing.html">Courses</a>
+            <a href="Our Story Worlds (Roots & Wings).html">Story Worlds</a>
+            <a href="Blog.html" class="active" style="opacity: 1; color: var(--brand-primary);">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+        </div>
+        <button class="btn-primary" onclick="location.href='Courses & Pricing.html'">Begin Journey</button>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <header class="blog-header">
+            <div class="hero-content">
+                <span class="hero-tag">The Storyteller's Ledger</span>
+                <h1>Insights & <br>Reflections</h1>
+                <p>Nurturing the ancient art of narrative for the modern conscious parent and lifelong learner.</p>
+            </div>
+        </header>
+
+        <!-- Blog Posts Grid -->
+        <section class="section">
+            <div class="blog-grid">
+                <!-- Post 1 -->
+                <article class="glass-card">
+                    <span class="tag">Indian Heritage</span>
+                    <h3>The Panchatantra Wasn't Just for Kids — And That's the Point</h3>
+                    <p>Written for princes, not children. Here's the real story behind one of India's greatest gifts to world literature.</p>
+                    <div class="post-meta">
+                        <span>24 Feb 2026</span>
+                        <span>•</span>
+                        <span>6 min read</span>
+                    </div>
+                </article>
+
+                <!-- Post 2 -->
+                <article class="glass-card">
+                    <span class="tag">Parenting</span>
+                    <h3>Raising a Confident Speaker: What the Research Actually Says</h3>
+                    <p>Confidence isn't personality — it's a skill. Discover why early engagement is the key indicator for confident adults.</p>
+                    <div class="post-meta">
+                        <span>17 Feb 2026</span>
+                        <span>•</span>
+                        <span>4 min read</span>
+                    </div>
+                </article>
+
+                <!-- Post 3 -->
+                <article class="glass-card">
+                    <span class="tag">Roots & Wings</span>
+                    <h3>What Aesop and the Jataka Tales Have in Common</h3>
+                    <p>Two traditions, centuries apart, continents away — and yet the same deep belief in the transformative power of narrative.</p>
+                    <div class="post-meta">
+                        <span>10 Feb 2026</span>
+                        <span>•</span>
+                        <span>5 min read</span>
+                    </div>
+                </article>
+
+                <!-- Post 4 -->
+                <article class="glass-card">
+                    <span class="tag">Parenting</span>
+                    <h3>The One Question That Opens Up Any Child After a Story</h3>
+                    <p>Most parents ask 'Did you like it?' Discover the alternative that actually starts meaningful conversations every time.</p>
+                    <div class="post-meta">
+                        <span>3 Feb 2026</span>
+                        <span>•</span>
+                        <span>7 min read</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: 100px 5%; border-top: 1px solid var(--glass-border); text-align: center; margin-top: 100px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">ONE KATHA</h2>
+        <div class="nav-links" style="justify-content: center; margin-bottom: 3rem;">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Blog.html">Blog</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="standard_layout.css" target="_blank">Styling Guide</a>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 One Katha at a Time. Created with passion for the spoken and written word.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
