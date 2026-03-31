@@ -98,6 +98,11 @@
   @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fadeDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
 </style>
+<script>
+    if(localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+</script>
 </head>
 <body>
 <nav>
@@ -120,15 +125,15 @@
             
             <div style="width: 40px; height: 3px; background: var(--brand-primary); margin: 0 auto 40px;"></div>
 
-            <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); color: #1a1a1a; margin-bottom: 30px; line-height: 1.2;">
+            <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); color: var(--text-main); margin-bottom: 30px; line-height: 1.2;">
                 Raise confident speakers, thoughtful communicators and <span style="color: var(--brand-primary);">future-ready leaders</span> through the magic of stories
             </h1>
 
-            <h2 style="font-size: 1.6rem; color: #5d4037; font-weight: 800; margin-bottom: 40px;">
+            <h2 style="font-size: 1.6rem; color: var(--text-accent); font-weight: 800; margin-bottom: 40px;">
                 Your child has a voice. We help them own it.
             </h2>
 
-            <p style="font-size: 1.2rem; color: #1a1a1a; line-height: 1.7; max-width: 800px; margin: 0 auto 50px; opacity: 0.9;">
+            <p style="font-size: 1.2rem; color: var(--text-main); line-height: 1.7; max-width: 800px; margin: 0 auto 50px; opacity: 0.9;">
                 Live online sessions for global Indian families, helping children aged 6 to 12 speak with clarity, listen with intent, and express themselves with confidence. Our stories are rooted in the richness of Indian culture and enriched by tales from around the world.
             </p>
 
@@ -139,11 +144,11 @@
 
             <!-- Stats Bar -->
             <div class="stats-bar" style="border: none; background: transparent; box-shadow: none; padding: 0; margin-top: 0; justify-content: center;">
-                <span style="font-size: 1rem; color: #1a1a1a;">Live Online Sessions</span>
-                <div class="stats-divider" style="background: #ddd;"></div>
-                <span style="font-size: 1rem; color: #1a1a1a;">Small Groups</span>
-                <div class="stats-divider" style="background: #ddd;"></div>
-                <span style="font-size: 1rem; color: #1a1a1a;">Roots & Wings</span>
+                <span style="font-size: 1rem; color: var(--text-main);">Live Online Sessions</span>
+                <div class="stats-divider" style="background: var(--divider-color);"></div>
+                <span style="font-size: 1rem; color: var(--text-main);">Small Groups</span>
+                <div class="stats-divider" style="background: var(--divider-color);"></div>
+                <span style="font-size: 1rem; color: var(--text-main);">Roots & Wings</span>
             </div>
         </section>
     </main>
@@ -166,5 +171,6 @@
         <p style="color: var(--text-muted); font-size: 0.9rem;">&copy; 2026 One Katha at a Time. Created with passion for the spoken and written word.</p>
     </footer>
   </div>
+<script src="theme.js"></script>
 </body>
 </html>

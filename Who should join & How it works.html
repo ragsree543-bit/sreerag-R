@@ -71,6 +71,11 @@
             .step-item { flex-direction: column; gap: 1rem; }
         }
     </style>
+<script>
+    if(localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+</script>
 </head>
 <body>
 
@@ -217,5 +222,6 @@
         });
     </script>
 
+<script src="theme.js"></script>
 </body>
 </html>

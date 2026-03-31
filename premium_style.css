@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
+    --divider-color: #ddd;
+    --text-accent: #5d4037;
     /* One Katha Signature Palette */
     --brand-primary: #e14c41; 
     --brand-secondary: #f43f5e;
@@ -514,4 +516,47 @@ footer {
         height: 1px;
         background: linear-gradient(to right, transparent, var(--glass-border), transparent);
     }
+}
+
+
+[data-theme="dark"] {
+    --brand-primary: #f46055; 
+    --brand-secondary: #ff5f7c;
+    --bg-base: #0f0f11; 
+    --bg-surface: #1e1e24;
+    --text-main: #f5f5f7;
+    --text-muted: #a0a0aa;
+    --text-accent: #ffb8a0;
+    --accent-glow: rgba(244, 96, 85, 0.15);
+    
+    --glass-bg: rgba(30, 30, 36, 0.8);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 15px 45px rgba(0, 0, 0, 0.5);
+    --divider-color: #333;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 9999;
+    transition: var(--transition-fast);
+}
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: var(--brand-primary);
+    color: white;
 }
